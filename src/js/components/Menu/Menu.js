@@ -25,7 +25,7 @@ const Menu = () => {
     <nav>
       <NavigationList>
         {data.navCatagories.map((category, index) => {
-          return <MenuListItem item={category} />;
+          return <MenuListItem item={category} key={index} />;
         })}
       </NavigationList>
     </nav>

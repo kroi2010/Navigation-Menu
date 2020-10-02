@@ -58,7 +58,7 @@ const DropDownColumn = ({ items, index }) => {
 
       <StyledDropDownList className={`col-${index}`}>
         {sortedItems.map((subcategory, index) => (
-          <DropDownListItem item={subcategory} />
+          <DropDownListItem item={subcategory} key={index} />
         ))}
       </StyledDropDownList>
     </figure>
