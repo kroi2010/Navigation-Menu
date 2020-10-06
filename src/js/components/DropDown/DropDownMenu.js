@@ -40,7 +40,7 @@ const DropDownMenu = ({ items }) => {
     <StyledDropDownMenu>
       {columnItems.map((itemList, index) => {
         return itemList.length > 0 ? (
-          <DropDownColumn items={itemList} index={index + 1} />
+          <DropDownColumn items={itemList} index={index + 1} key={index} />
         ) : null;
       })}
     </StyledDropDownMenu>
